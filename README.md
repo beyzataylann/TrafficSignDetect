@@ -1,4 +1,4 @@
-#**Turkish Traffic Sign Recognition Project**
+# TURKISH TRAFFIC SIGN RECOGNITION PROJECT
 
 **Project Overview**
 Project Goal:
