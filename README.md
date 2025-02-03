@@ -1,13 +1,13 @@
-**Turkish Traffic Sign Recognition Project**
+#**Turkish Traffic Sign Recognition Project**
 
-Project Overview
+**Project Overview**
 Project Goal:
 The goal of this project is to develop a deep learning model capable of recognizing traffic signs. The primary aim is to detect and classify traffic signs on the road, which can help improve environmental perception for autonomous vehicles.
 
-Model Choice and Algorithm:
+**Model Choice and Algorithm:**
 To detect traffic signs, the YOLO (You Only Look Once) algorithm has been used. YOLOv8 is an advanced and recent model in the object detection field. Its ability to detect multiple objects in a single pass makes it suitable for real-time applications such as autonomous driving.
 
-Required Libraries
+**Required Libraries**
 Some of the essential libraries used in the project are:
 
 Ultralytics (YOLOv8): A library that provides the YOLOv8 model and simplifies the training and testing process.
@@ -15,7 +15,8 @@ PyTorch: A deep learning framework used for training the model.
 OpenCV and Pillow: Used for image processing and reading/writing images.
 Albumentations: A library for data augmentation, which applies various transformations to the images to improve model accuracy.
 Matplotlib, Seaborn, Scipy: Used for visualizing results and analyzing performance.
-Dataset and Labeling
+
+**Dataset and Labeling**
 Dataset Structure:
 The dataset used for training consists of traffic sign images. Typically, the dataset contains the following structure:
 
@@ -30,7 +31,7 @@ Model Training
 Training the YOLOv8 Model:
 The process of training the YOLOv8 model involves the following steps:
 
-Preparing the Dataset:
+**Preparing the Dataset:**
 
 The dataset is split into two parts: training and validation sets.
 The training data is used for model learning, while the validation data is used to test the model’s generalization.
@@ -45,12 +46,13 @@ Loss Functions: A loss function is used to calculate the difference between the 
 Data Augmentation:
 
 Various augmentation techniques are applied during training to improve model robustness. For instance, transformations such as rotation, cropping, and brightness adjustment are applied to images.
-Training Results:
+
+**Training Results:**
 
 During training, metrics like accuracy and loss are monitored. These metrics give insights into how well the model is learning.
 At the end of the training process, the model’s performance is evaluated using metrics like precision, recall, and mAP (mean Average Precision).
 Model Testing and Evaluation
-Testing the Model:
+**Testing the Model:**
 After training, the model is tested on the validation dataset. This step evaluates how well the model can generalize to new, unseen data. The evaluation metrics used are:
 
 Precision: The ratio of true positive detections to the total number of detections made by the model.
@@ -59,10 +61,10 @@ mAP (mean Average Precision): An overall metric that evaluates the model's perfo
 Visualizing the Results:
 After testing, the results are visualized by displaying the traffic signs detected by the model on images. Libraries like Matplotlib and OpenCV are used to create visual representations of the model’s correct and incorrect predictions.
 
-Model Saving and Export
+**Model Saving and Export**
 Once training is complete, the model is saved as a .pt file (PyTorch model format). This allows the model to be used in other systems or applications for inference.
 
 Additionally, the model can be exported to ONNX, a more widely compatible format that can be run across different platforms and hardware.
 
-Contributions and Communication
+**Contributions and Communication**
 If the project is open source, contributors can submit issues, pull requests, or provide feedback. Also, a communication channel is essential for reporting bugs or sharing improvements.
